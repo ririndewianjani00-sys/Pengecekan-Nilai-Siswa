@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEK NILAI SISWA</title>
+  <link rel="stylesheet" href="mid.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>CEK NILAI SISWA</h2>
+
+    <label for="nama">Nama Siswa:</label>
+    <input type="text" id="nama" placeholder="Masukkan nama siswa">
+
+    <label for="nilai">Nilai Siswa (0 - 100):</label>
+    <input type="number" id="nilai" placeholder="Masukkan nilai (0-100)" min="0" max="100">
+
+    <button onclick="prosesNilai()">Proses Hasil</button>
+
+    <div id="hasilBox" class="hasil-box">
+      <p><strong>Nama:</strong> <span id="outNama"></span></p>
+      <p><strong>Nilai:</strong> <span id="outNilai"></span></p>
+      <p><strong>Grade:</strong> <span id="outGrade"></span></p>
+      <p><strong>Status:</strong> <span id="outStatus"></span></p>
+    </div>
+</div>
+ 
+
+<script src="low.js"></script>
+</body>
+</html>
